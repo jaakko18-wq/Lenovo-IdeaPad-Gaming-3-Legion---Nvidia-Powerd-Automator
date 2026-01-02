@@ -63,9 +63,9 @@ Paste the following:
       # Listen for power profile changes
       gdbus monitor --system --dest net.hadess.PowerProfiles --object-path /net/hadess/PowerProfiles | \
       while read -r line; do
-    if [[ "$line" == *"ActiveProfile"* ]]; then
-        # Get the new profile
-        PROFILE=$(powerprofilesctl get)
+         if [[ "$line" == *"ActiveProfile"* ]]; then
+           # Get the new profile
+           PROFILE=$(powerprofilesctl get)
         
         # Match icons and text to Lenovo style
         case "$PROFILE" in
