@@ -23,6 +23,11 @@ Use at your own risk. This software is provided "as is", without warranty of any
    Arch Linux install:
    
          yay -S lenovo-legion-module-dkms-git
+         yay -S lenovolegionlinux-git
+   or
+
+         sudo pacman -S lenovolegionlinux-dkms
+         sudo pacman -S lenovolegionlinux
 
     Desktop Environment: KDE Plasma 6.
 
