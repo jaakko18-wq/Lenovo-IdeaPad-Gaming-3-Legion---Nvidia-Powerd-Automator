@@ -1,3 +1,9 @@
+🔍 Why this project? (The Problem)
+
+On many Lenovo laptops (like IdeaPad Gaming or Legion), the Nvidia GPU's Power Management (TDP) can get stuck. For example, the GPU might be capped at 60W even when it should reach 85W or higher in Performance mode.
+
+This usually happens when switching between Balanced, Quiet, and Performance modes. The nvidia-powerd service fails to update the power limits correctly, leaving you with lower performance than expected. Restarting the nvidia-powerd service manually fixes this and unlocks the full TDP, and this project automates that process.
+
 # Lenovo-IdeaPad-Gaming-3 & Legion Nvidia Powerd Automator
 This project automates the nvidia-powerd.service restart on Arch Linux when switching power profiles (e.g., via Fn+Q) or when connecting a charger. It features clean KDE Plasma 6 OSD notifications.
 
