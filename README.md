@@ -1,4 +1,4 @@
-# Lenovo-IdeaPad-Gaming-3-Legion---Nvidia-Powerd-Automator
+# Lenovo-IdeaPad-Gaming-3 Legion---Nvidia-Powerd-Automator
 This project automates the nvidia-powerd.service restart on Arch Linux when switching power profiles (e.g., via Fn+Q) or when connecting a charger. It features clean KDE Plasma 6 OSD notifications.
 
 ⚠️ Disclaimer
@@ -39,7 +39,7 @@ Use at your own risk. This software is provided "as is", without warranty of any
 1. Configure Sudoers (Passwordless Restart) To allow the script to restart the service without a password, you need to create a rule. On some systems, you must switch to the root user first to access the sudoers directory.
 
          # Switch to root user
-         su - 
+         su
 
          # Create the rule using nano (replace 'yourusername' with your actual username)
          EDITOR=nano visudo -f /etc/sudoers.d/nvidia-restart
@@ -112,7 +112,6 @@ Bash
     nano ~/.config/systemd/user/nvidia-profile-monitor.service
 
 Paste the following:
-    Ini, TOML
 
     [Unit]
     Description=Nvidia Powerd Restart on Profile Change
