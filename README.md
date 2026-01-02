@@ -36,21 +36,19 @@ Use at your own risk. This software is provided "as is", without warranty of any
     Tools: qt6-declarative (provides the qdbus6 command).
 
 🚀 Installation
-1. Configure Sudoers (Passwordless Restart)
+1. Configure Sudoers (Passwordless Restart) To allow the script to restart the service without a password, you need to create a rule. On some systems, you must switch to the root user first to access the sudoers directory.
 
-Allow the script to restart the service without a password prompt.
+         # Switch to root user
+         su - 
 
-Open the configuration file with nano:
-    Bash
+         # Create the rule using nano (replace 'yourusername' with your actual username)
+         EDITOR=nano visudo -f /etc/sudoers.d/nvidia-restart
 
-    sudo EDITOR=nano visudo -f /etc/sudoers.d/nvidia-restart
+Inside the file, add:
 
-Add the following line (replace yourusername with your actual username):
-Plaintext
+      yourusername ALL=(ALL) NOPASSWD: /usr/bin/systemctl restart nvidia-powerd.service
 
-    yourusername ALL=(ALL) NOPASSWD: /usr/bin/systemctl restart nvidia-powerd.service
-
-Save: Ctrl+O, Enter, Exit: Ctrl+X.
+Save (Ctrl+O, Enter) and Exit (Ctrl+X). Then type exit to leave the root shell.
 
 2. Create the Monitoring Script
 
