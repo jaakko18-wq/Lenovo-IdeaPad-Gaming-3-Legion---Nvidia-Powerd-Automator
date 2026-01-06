@@ -21,11 +21,11 @@ Use at your own risk. The author is not responsible for any damage to your hardw
 
 🛠 Requirements
 
-   Kernel Driver: lenovolegionlinux (Enables Fn+Q and profile management).
+   1. Kernel Driver: lenovolegionlinux (Enables Fn+Q and profile management).
 
-   NVIDIA Drivers: Proprietary drivers with nvidia-powerd.service enabled.
+   2. NVIDIA Drivers: Proprietary drivers with nvidia-powerd.service enabled.
 
-   KDE Plasma 6 (Optional, for OSD notifications).
+   3. KDE Plasma 6 (Optional, for OSD notifications).
 
 🚀 Installation
 Option 1: Automatic Installation (Recommended)
