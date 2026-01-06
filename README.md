@@ -62,9 +62,9 @@ Reload rules:
 
 If you want KDE OSD notifications, you can use the monitor script included in the legacy_script folder:
 
-    Ensure qt6-declarative (for qdbus6) is installed.
+   Ensure qt6-declarative (for qdbus6) is installed.
 
-    The script listens to D-Bus for ActiveProfile changes and triggers the KDE OSD Service.
+   The script listens to D-Bus for ActiveProfile changes and triggers the KDE OSD Service.
 
 🔍 Verification
 
