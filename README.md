@@ -6,9 +6,11 @@ This project automates the nvidia-powerd.service restart on Linux (specifically 
 On many Lenovo laptops, the NVIDIA GPU's Total Graphics Power (TGP) can get stuck. For example, the GPU might be capped at 60W even when it should reach 85W or higher in Performance mode.
 
 This happens because the nvidia-powerd service fails to detect the hardware-level profile switch in real-time. Restarting the service manually fixes this and unlocks the full TDP, and this project automates that process.
+
 ⚠️ Disclaimer
 
 Use at your own risk. The author is not responsible for any damage to your hardware, data loss, or system instability. Always review the code before running it.
+
 🌟 Features
 
    Fn+Q Support: Detects hardware-level profile switches and refreshes the NVIDIA service immediately.
