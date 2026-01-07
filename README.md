@@ -23,7 +23,16 @@ Use at your own risk. The author is not responsible for any damage to your hardw
 
 🛠 Requirements
 
-   1. Kernel Driver: lenovolegionlinux (Enables Fn+Q and profile management).
+   1.Kernel Driver: Lenovolegionlinux Enables Fn+Q and profile management on Linux.
+                  
+      https://github.com/johnfanv2/LenovoLegionLinux
+   
+   Arch Linux install: 
+         
+      yay -S lenovolegionlinux-dkms lenovolegionlinux
+   or
+
+     sudo pacman -S lenovolegionlinux lenovolegionlinux-dkms 
 
    2. NVIDIA Drivers: Proprietary drivers with nvidia-powerd.service enabled.
 
