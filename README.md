@@ -39,9 +39,7 @@ Use at your own risk. The author is not responsible for any damage to your hardw
    3. KDE Plasma 6 (Optional, for OSD notifications).
 
 🚀 Installation
-Option 1: Automatic Installation (Recommended)
-
-This method installs the Version 2 (systemd path unit), which is the most lightweight and reliable way.
+Option 1: Automatic Installation
 
 Clone the repository:
 
