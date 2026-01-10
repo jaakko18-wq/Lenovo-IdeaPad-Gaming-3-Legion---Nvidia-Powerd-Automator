@@ -69,7 +69,7 @@ Reload rules:
          
          sudo udevadm control --reload-rules
 
-🖥 KDE Plasma 6 Notifications (Advanced)
+🖥 KDE Plasma 6 Notifications (Optional)
 
 If you want KDE OSD notifications, you can use the monitor script included in the With OSD folder:
 
@@ -80,17 +80,21 @@ If you want KDE OSD notifications, you can use the monitor script included in th
 
     git clone https://github.com/jaakko18-wq/Lenovo-IdeaPad-Gaming-3-Legion-Nvidia-Powerd-Automator.git
     cd Lenovo-IdeaPad-Gaming-3-Legion-Nvidia-Powerd-Automator
-    cd with OSD
+    cd With_OSD
 
 3.  **Run the installer:**
-    ```bash
-    sudo chmod +x install.sh
-    sudo ./install.sh
-    ```
+   
+          sudo chmod +x install.sh
+          sudo ./install.sh
 
-4.  **Follow the prompts:**
+5.   **Follow the prompts:**
     * The script will ask if you want to install the **KDE OSD notifications**.
     * If you chose **Yes**, remember to run the activation command provided at the end of the script (without sudo).
+
+6.   remove the automation and clean up system files:
+
+         sudo chmod +x uninstall.sh
+         sudo ./uninstall.sh
 
 
 🔍 Verification
